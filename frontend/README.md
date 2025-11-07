@@ -1,5 +1,32 @@
 # Project Template Setup
 
+## To Run
+
+### Startup Backend
+```
+cd backend
+npm install
+npm start
+```
+
+Startup frontend
+```
+cd frontend
+npm install
+npm run dev
+```
+
+Add a DB document
+```
+mongosh
+use tiny_demo
+db.demos.insertOne({
+  text: "Inserted by hand from the terminal!",
+  createdAt: new Date()
+})
+db.demos.find().pretty()
+
+```
 ## Directory Structure
 
 ```
